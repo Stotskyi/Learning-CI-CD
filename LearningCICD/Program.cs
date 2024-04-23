@@ -13,7 +13,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/", () => $"This is {builder.Configuration["Environment"]} environment");
+app.MapGet("/", () => $"This is {builder.Configuration["Environment"]} environment/maybe i should say fuck off?");
 
 app.Run();
 
