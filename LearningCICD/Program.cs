@@ -15,7 +15,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseCors(opts =>
 {
-    opts.WithOrigins("http://localhost:4200")
+    opts.WithOrigins("https://learning-ci-cd-client-2024.azurewebsites.net/")
         .AllowAnyMethod()
         .AllowAnyHeader();
 });
