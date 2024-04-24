@@ -10,7 +10,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getData():Observable<string>{
-    return this.http.get('http://localhost:5247/', {
+    return this.http.get('https://learning-ci-cd-2024.azurewebsites.net/', {
       responseType: 'text'
     });
     
