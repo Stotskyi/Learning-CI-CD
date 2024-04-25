@@ -32,6 +32,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: node-app
+          run: dir 
           path: dist
 
   deploy:
@@ -54,4 +55,4 @@ jobs:
           app-name: 'learning-ci-cd-client-2024'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BB202944D1564E4AB078B22FB7B8828D }}
-          package: .
+          package: dist
