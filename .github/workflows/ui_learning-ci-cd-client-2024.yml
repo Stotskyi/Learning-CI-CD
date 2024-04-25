@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: node-app
-          path: LearningCiCDClient/dist
+          path: LearningCiCDClient/dist/learning-ci-cdclient
 
   deploy:
     runs-on: ubuntu-latest
@@ -54,4 +54,4 @@ jobs:
           app-name: 'learning-ci-cd-client-2024'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BB202944D1564E4AB078B22FB7B8828D }}
-          package: LearningCiCDClient/dist
+          package: LearningCiCDClient/dist/learning-ci-cdclient
