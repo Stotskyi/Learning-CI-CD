@@ -54,4 +54,5 @@ jobs:
           app-name: 'learning-ci-cd-client-2024'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BB202944D1564E4AB078B22FB7B8828D }}
-          path: LearningCiCDClient/dist/learning-ci-cdclient
+          package: LearningCiCDClient/dist/learning-ci-cdclient
+          action-debug: true 
